@@ -12,9 +12,13 @@ import android.widget.TextView;
 
 public class MainBlockActivity extends AppCompatActivity {
 
+    private HomeKeyLocker mHomeKeyLocker;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().getDecorView().setSystemUiVisibility(
@@ -34,12 +38,25 @@ public class MainBlockActivity extends AppCompatActivity {
         title.setTypeface(font);
         description.setTypeface(font);
 
-        ImageButton wildcard = (ImageButton) findViewById(R.id.mainButton);
+        ImageButton wildcard = (ImageButton) findViewById(R.id.mainWildCardButton);
 
         wildcard.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 MainBlockDialog cdd = new MainBlockDialog(MainBlockActivity.this);
                 cdd.show();
+            }
+        });
+
+        ImageButton backButton = (ImageButton) findViewById(R.id.tillbakaButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                finish();
             }
         });
     }

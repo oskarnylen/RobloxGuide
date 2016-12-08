@@ -13,7 +13,7 @@
         android:text="Tryck på ett av blocken för att se hur man använder det"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/descriptionText"
+        android:id="@+id/descriptionTextView"
         android:layout_centerHorizontal="true"
         android:textSize="55sp"
         android:layout_margin="50dp"
@@ -27,7 +27,7 @@
         android:columnCount="3"
         android:rowCount="3"
         android:orientation="horizontal"
-        android:layout_below="@+id/descriptionText"
+        android:layout_below="@+id/descriptionTextView"
         android:layout_centerHorizontal="true">
 
         <ImageButton
