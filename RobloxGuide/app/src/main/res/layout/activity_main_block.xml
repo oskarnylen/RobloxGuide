@@ -11,12 +11,60 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.edu.chalmers.robloxguide.MainBlockActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <TextView
+        android:text="Mainblocket"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/mainblock"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/imageView2" />
+        android:textSize="112sp"
+        android:textAlignment="center"
+        android:id="@+id/mainTitle"
+        android:textColor="#000"/>
+
+    <TextView
+        android:text="Alla program startar från Main-blocket. Efter Main-blocket kan du använda många olika block. Tryck på frågetecknet för att se vilka."
+        android:id="@+id/mainDescriptionText"
+        android:textColor="#000"
+        android:textSize="62sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:orientation="horizontal"
+        android:layout_below="@+id/mainDescriptionText"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:id="@+id/mainButton"
+            android:layout_width="223px"
+            android:layout_height="223px"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/main_icon"
+            android:background="@android:color/background_light" />
+
+        <ImageButton
+            android:layout_width="223px"
+            android:layout_height="223px"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/wildcard_icon"
+            android:id="@+id/forwardButton"
+            android:background="@android:color/background_light" />
+    </GridLayout>
+
 </RelativeLayout>

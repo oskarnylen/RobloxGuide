@@ -1,6 +1,7 @@
 package com.edu.chalmers.robloxguide;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,6 +30,12 @@ public class MainActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_FULLSCREEN
                         | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         setContentView(R.layout.activity_main);
+
+        TextView title = (TextView) findViewById(R.id.descriptionText);
+
+        Typeface font = Typeface.createFromAsset(getAssets(), "BradBunR.ttf");
+
+        title.setTypeface(font);
 
         mainButton = (ImageButton) findViewById(R.id.mainButton);
 

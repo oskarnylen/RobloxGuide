@@ -1,9 +1,14 @@
 package com.edu.chalmers.robloxguide;
 
+import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class MainBlockActivity extends AppCompatActivity {
 
@@ -20,5 +25,22 @@ public class MainBlockActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_FULLSCREEN
                         | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
         setContentView(R.layout.activity_main_block);
+
+        TextView title = (TextView) findViewById(R.id.mainTitle);
+        TextView description = (TextView) findViewById(R.id.mainDescriptionText);
+
+        Typeface font = Typeface.createFromAsset(getAssets(), "BradBunR.ttf");
+
+        title.setTypeface(font);
+        description.setTypeface(font);
+
+        ImageButton wildcard = (ImageButton) findViewById(R.id.mainButton);
+
+        wildcard.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                MainBlockDialog cdd = new MainBlockDialog(MainBlockActivity.this);
+                cdd.show();
+            }
+        });
     }
 }
