@@ -55,5 +55,59 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(i);
             }
         });
+
+        ImageButton callFunctionButton = (ImageButton) findViewById(R.id.anropaFunktionButton);
+
+        callFunctionButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, CallFunctionBlockActivity.class);
+                MainActivity.this.startActivity(i);
+            }
+        });
+
+        ImageButton defineFunctionButton = (ImageButton) findViewById(R.id.funktionButton);
+
+        defineFunctionButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, DefineFunctionBlockActivity.class);
+                MainActivity.this.startActivity(i);
+            }
+        });
+
+        ImageButton ifButton = (ImageButton) findViewById(R.id.ifButton);
+
+        ifButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, IfBlockActivity.class);
+                MainActivity.this.startActivity(i);
+            }
+        });
+
+        ImageButton assignValueButton = (ImageButton) findViewById(R.id.tilldelaVardeButton);
+
+        assignValueButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, AssignValueBlockActivity.class);
+                MainActivity.this.startActivity(i);
+            }
+        });
+
+        ImageButton valueButton = (ImageButton) findViewById(R.id.anvandVardeButton);
+
+        valueButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, ValueBlockActivity.class);
+                MainActivity.this.startActivity(i);
+            }
+        });
+
+        ImageButton numberButton = (ImageButton) findViewById(R.id.twoButton);
+
+        numberButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, NumberBlockActivity.class);
+                MainActivity.this.startActivity(i);
+            }
+        });
     }
 }
