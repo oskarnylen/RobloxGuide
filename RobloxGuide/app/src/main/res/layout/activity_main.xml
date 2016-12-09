@@ -117,7 +117,7 @@
             android:scaleType="fitCenter"
             android:layout_margin="10dp"
             app:srcCompat="@drawable/multiplicera_icon"
-            android:id="@+id/multipliceraButton"
+            android:id="@+id/mathButton"
             android:background="@android:color/background_light" />
 
         <ImageButton
