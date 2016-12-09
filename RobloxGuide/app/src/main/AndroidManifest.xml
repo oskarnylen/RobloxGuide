@@ -18,6 +18,10 @@
         </activity>
         <activity android:name=".MainBlockActivity"
                   android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".ForwardBlockActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".LoopBlockActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -13,7 +13,7 @@
     tools:context="com.edu.chalmers.robloxguide.MainBlockActivity">
 
     <TextView
-        android:text="Main-blocket"
+        android:text="Loop-block"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -25,7 +25,7 @@
         android:textColor="#000"/>
 
     <TextView
-        android:text="Alla program startar från main-blocket."
+        android:text="Loopblocken upprepar blocken som finns under."
         android:id="@+id/mainDescriptionText"
         android:textColor="#000"
         android:textSize="@dimen/descriptionTextSize"
@@ -46,7 +46,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="0dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/exempelText"
@@ -67,16 +67,57 @@
         android:layout_marginLeft="20dp">
 
         <ImageButton
-            android:id="@+id/mainButton"
+            android:layout_width="@dimen/smallImageButtonSize"
+            android:layout_height="@dimen/smallImageButtonSize"
+            android:scaleType="fitCenter"
+            android:layout_margin="@dimen/smallImageButtonMargin"
+            app:srcCompat="@drawable/space"
+            android:background="@android:color/background_light" />
+
+        <ImageButton
+            android:id="@+id/loopButton"
+            android:layout_width="@dimen/smallImageButtonSize"
+            android:layout_height="@dimen/smallImageButtonSize"
+            android:scaleType="fitCenter"
+            android:layout_margin="@dimen/smallImageButtonMargin"
+            app:srcCompat="@drawable/four_icon"
+            android:background="@android:color/background_light" />
+
+        <ImageButton
+            android:layout_width="@dimen/smallImageButtonSize"
+            android:layout_height="@dimen/smallImageButtonSize"
+            android:scaleType="fitCenter"
+            android:layout_margin="@dimen/smallImageButtonMargin"
+            app:srcCompat="@drawable/space"
+            android:background="@android:color/background_light" />
+
+        <ImageButton
+            android:layout_width="@dimen/smallImageButtonSize"
+            android:layout_height="@dimen/smallImageButtonSize"
+            android:scaleType="fitCenter"
+            android:layout_margin="@dimen/smallImageButtonMargin"
+            app:srcCompat="@drawable/space"
+            android:background="@android:color/background_light" />
+
+        <ImageButton
             android:layout_width="@dimen/smallImageButtonSize"
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
             app:srcCompat="@drawable/main_icon"
+            android:id="@+id/rotateLeftButton"
             android:background="@android:color/background_light" />
 
         <ImageButton
-            android:id="@+id/forwardButton"
+            android:layout_width="@dimen/smallImageButtonSize"
+            android:layout_height="@dimen/smallImageButtonSize"
+            android:scaleType="fitCenter"
+            android:layout_margin="@dimen/smallImageButtonMargin"
+            app:srcCompat="@drawable/loop_icon"
+            android:id="@+id/backwardButton"
+            android:background="@android:color/background_light" />
+
+        <ImageButton
             android:layout_width="@dimen/smallImageButtonSize"
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
@@ -89,8 +130,7 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/rotateleft_icon"
-            android:id="@+id/rotateLeftButton"
+            app:srcCompat="@drawable/forward_icon"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -98,9 +138,18 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/backward_icon"
-            android:id="@+id/backwardButton"
+            app:srcCompat="@drawable/space"
             android:background="@android:color/background_light" />
+
+        <ImageButton
+            android:layout_width="@dimen/smallImageButtonSize"
+            android:layout_height="@dimen/smallImageButtonSize"
+            android:scaleType="fitCenter"
+            android:layout_margin="@dimen/smallImageButtonMargin"
+            app:srcCompat="@drawable/forward_icon"
+            android:background="@android:color/background_light" />
+
+
 
     </GridLayout>
 
@@ -124,8 +173,8 @@
         android:background="@null" />
 
     <pl.droidsonroids.gif.GifTextView
-        android:layout_width="400px"
-        android:layout_height="400px"
+        android:layout_width="350px"
+        android:layout_height="350px"
         android:background="@drawable/test_large"
         android:layout_below="@+id/GridLayout1"
         android:layout_centerHorizontal="true" />

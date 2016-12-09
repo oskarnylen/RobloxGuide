@@ -13,7 +13,7 @@
     tools:context="com.edu.chalmers.robloxguide.MainBlockActivity">
 
     <TextView
-        android:text="Main-blocket"
+        android:text="Rörelse-block"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -25,7 +25,7 @@
         android:textColor="#000"/>
 
     <TextView
-        android:text="Alla program startar från main-blocket."
+        android:text="Rörelseblocken förflyttar roboten."
         android:id="@+id/mainDescriptionText"
         android:textColor="#000"
         android:textSize="@dimen/descriptionTextSize"
