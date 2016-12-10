@@ -53,5 +53,61 @@ public class IfBlockActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton mainButton = (ImageButton) findViewById(R.id.mainButton);
+        mainButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(IfBlockActivity.this, MainBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton forwardButton1 = (ImageButton) findViewById(R.id.forwardButton1);
+        forwardButton1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(IfBlockActivity.this, ForwardBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton forwardButton2 = (ImageButton) findViewById(R.id.forwardButton2);
+        forwardButton2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(IfBlockActivity.this, ForwardBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton rotateButton = (ImageButton) findViewById(R.id.rightButton);
+        rotateButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(IfBlockActivity.this, ForwardBlockActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

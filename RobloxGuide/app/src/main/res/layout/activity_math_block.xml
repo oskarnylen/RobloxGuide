@@ -67,21 +67,21 @@
         android:layout_marginLeft="20dp">
 
         <ImageButton
-            android:id="@+id/mainButton"
+            android:id="@+id/valueButton2"
             android:layout_width="@dimen/smallImageButtonSize"
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/tilldelavarde_icon"
+            app:srcCompat="@drawable/tilldelavarde_icon_transparent"
             android:background="@android:color/background_light" />
 
         <ImageButton
-            android:id="@+id/forwardButton"
+            android:id="@+id/twoButton"
             android:layout_width="@dimen/smallImageButtonSize"
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/two_icon"
+            app:srcCompat="@drawable/two_icon_transparent"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -98,8 +98,8 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/one_icon"
-            android:id="@+id/backwardButton"
+            app:srcCompat="@drawable/one_icon_transparent"
+            android:id="@+id/oneButton"
             android:background="@android:color/background_light" />
 
     </GridLayout>

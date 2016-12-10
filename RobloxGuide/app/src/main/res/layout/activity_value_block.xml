@@ -25,7 +25,7 @@
         android:textColor="#000"/>
 
     <TextView
-        android:text="I en loop kan man använda ett värde-block istället för en siffra. Värdet i exemplet nedan är 3."
+        android:text="I en loop kan man använda ett värde-block istället för en siffra."
         android:id="@+id/mainDescriptionText"
         android:textColor="#000"
         android:textSize="52sp"
@@ -75,7 +75,6 @@
             android:background="@android:color/background_light" />
 
         <ImageButton
-            android:id="@+id/loopButton"
             android:layout_width="@dimen/smallImageButtonSize"
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
@@ -104,8 +103,8 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/main_icon"
-            android:id="@+id/rotateLeftButton"
+            app:srcCompat="@drawable/main_icon_transparent"
+            android:id="@+id/mainButton"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -113,8 +112,8 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/loop_icon"
-            android:id="@+id/backwardButton"
+            app:srcCompat="@drawable/loop_icon_transparent"
+            android:id="@+id/loopButton"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -122,16 +121,18 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/forward_icon"
-            android:background="@android:color/background_light" />
+            app:srcCompat="@drawable/rotateright_icon_transparent"
+            android:background="@android:color/background_light"
+            android:id="@+id/rotateRightButton" />
 
         <ImageButton
             android:layout_width="@dimen/smallImageButtonSize"
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/forward_icon"
-            android:background="@android:color/background_light" />
+            app:srcCompat="@drawable/forward_icon_transparent"
+            android:background="@android:color/background_light"
+            android:id="@+id/forwardButton1" />
 
         <ImageButton
             android:layout_width="@dimen/smallImageButtonSize"
@@ -146,8 +147,9 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/forward_icon"
-            android:background="@android:color/background_light" />
+            app:srcCompat="@drawable/forward_icon_transparent"
+            android:background="@android:color/background_light"
+            android:id="@+id/forwardButton2" />
     </GridLayout>
 
     <TextView
@@ -156,7 +158,7 @@
         android:id="@+id/moreText"
         android:textSize="@dimen/exampleTextSize"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -53,5 +53,75 @@ public class LoopBlockActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton fourButton = (ImageButton) findViewById(R.id.fourButton);
+        fourButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(LoopBlockActivity.this, NumberBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton mainButton = (ImageButton) findViewById(R.id.mainButton);
+        mainButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(LoopBlockActivity.this, MainBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton forwardButton1 = (ImageButton) findViewById(R.id.forwardButton1);
+        forwardButton1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(LoopBlockActivity.this, ForwardBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton forwardButton2 = (ImageButton) findViewById(R.id.forwardButton2);
+        forwardButton2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(LoopBlockActivity.this, ForwardBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton rotateButton = (ImageButton) findViewById(R.id.rotationRightButton);
+        rotateButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(LoopBlockActivity.this, ForwardBlockActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

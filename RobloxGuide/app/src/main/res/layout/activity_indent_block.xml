@@ -76,7 +76,7 @@
     <pl.droidsonroids.gif.GifTextView
         android:layout_width="350px"
         android:layout_height="350px"
-        android:background="@drawable/test_large"
+        android:background="@drawable/indent_gif"
         android:layout_below="@+id/GridLayout1"
         android:layout_centerHorizontal="true" />
 
@@ -99,12 +99,12 @@
             android:background="@android:color/background_light" />
 
         <ImageButton
-            android:id="@+id/loopButton"
+            android:id="@+id/fourButton"
             android:layout_width="@dimen/smallImageButtonSize"
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/four_icon"
+            app:srcCompat="@drawable/four_icon_transparent"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -120,15 +120,16 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/backward_icon"
-            android:background="@android:color/background_light" />
+            app:srcCompat="@drawable/two_icon_transparent"
+            android:background="@android:color/background_light"
+            android:id="@+id/twoButton" />
 
         <ImageButton
             android:layout_width="@dimen/smallImageButtonSize"
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/main_icon"
+            app:srcCompat="@drawable/main_icon_transparent"
             android:id="@+id/mainButton"
             android:background="@android:color/background_light" />
 
@@ -137,8 +138,8 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/loop_icon"
-            android:id="@+id/backwardButton"
+            app:srcCompat="@drawable/loop_icon_transparent"
+            android:id="@+id/loopButton1"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -154,9 +155,9 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/if_icon"
+            app:srcCompat="@drawable/loop_icon_transparent"
             android:background="@android:color/background_light"
-            android:id="@+id/ifButton" />
+            android:id="@+id/loopButton2" />
 
         <ImageButton
             android:layout_width="@dimen/smallImageButtonSize"
@@ -171,17 +172,18 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/forward_icon"
-            android:background="@android:color/background_light" />
+            app:srcCompat="@drawable/forward_icon_transparent"
+            android:background="@android:color/background_light"
+            android:id="@+id/forwardButton" />
 
         <ImageButton
             android:layout_width="@dimen/smallImageButtonSize"
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/rotateright_icon"
+            app:srcCompat="@drawable/rotateright_icon_transparent"
             android:background="@android:color/background_light"
-            android:id="@+id/imageButton"
+            android:id="@+id/rotateRightButton"
             android:layout_row="2"
             android:layout_column="3" />
 

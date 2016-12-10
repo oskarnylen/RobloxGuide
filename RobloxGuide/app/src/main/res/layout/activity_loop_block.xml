@@ -75,12 +75,12 @@
             android:background="@android:color/background_light" />
 
         <ImageButton
-            android:id="@+id/loopButton"
+            android:id="@+id/fourButton"
             android:layout_width="@dimen/smallImageButtonSize"
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/four_icon"
+            app:srcCompat="@drawable/four_icon_transparent"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -104,8 +104,8 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/main_icon"
-            android:id="@+id/rotateLeftButton"
+            app:srcCompat="@drawable/main_icon_transparent"
+            android:id="@+id/mainButton"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -114,7 +114,7 @@
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
             app:srcCompat="@drawable/loop_icon"
-            android:id="@+id/backwardButton"
+            android:id="@+id/loopButton"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -122,16 +122,18 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/forward_icon"
-            android:background="@android:color/background_light" />
+            app:srcCompat="@drawable/rotateright_icon_transparent"
+            android:background="@android:color/background_light"
+            android:id="@+id/rotationRightButton" />
 
         <ImageButton
             android:layout_width="@dimen/smallImageButtonSize"
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/forward_icon"
-            android:background="@android:color/background_light" />
+            app:srcCompat="@drawable/forward_icon_transparent"
+            android:background="@android:color/background_light"
+            android:id="@+id/forwardButton1" />
 
         <ImageButton
             android:layout_width="@dimen/smallImageButtonSize"
@@ -146,8 +148,9 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/forward_icon"
-            android:background="@android:color/background_light" />
+            app:srcCompat="@drawable/forward_icon_transparent"
+            android:background="@android:color/background_light"
+            android:id="@+id/forwardButton2" />
 
 
 
@@ -175,7 +178,7 @@
     <pl.droidsonroids.gif.GifTextView
         android:layout_width="350px"
         android:layout_height="350px"
-        android:background="@drawable/test_large"
+        android:background="@drawable/loop_gif"
         android:layout_below="@+id/GridLayout1"
         android:layout_centerHorizontal="true" />
 

@@ -81,7 +81,7 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/forward_icon"
+            app:srcCompat="@drawable/forward_icon_transparent"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -89,7 +89,7 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/rotateright_icon"
+            app:srcCompat="@drawable/rotateright_icon_transparent"
             android:id="@+id/rotateRightButton"
             android:background="@android:color/background_light" />
 
@@ -98,7 +98,7 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/forward_icon"
+            app:srcCompat="@drawable/forward_icon_transparent"
             android:id="@+id/forwardButton2"
             android:background="@android:color/background_light" />
 
@@ -124,9 +124,9 @@
         android:background="@null" />
 
     <pl.droidsonroids.gif.GifTextView
-        android:layout_width="400px"
-        android:layout_height="400px"
-        android:background="@drawable/test_large"
+        android:layout_width="350px"
+        android:layout_height="350px"
+        android:background="@drawable/main_gif"
         android:layout_below="@+id/GridLayout1"
         android:layout_centerHorizontal="true" />
 

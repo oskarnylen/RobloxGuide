@@ -69,5 +69,47 @@ public class AssignValueBlockActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton twoButton = (ImageButton) findViewById(R.id.twoButton);
+        twoButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(AssignValueBlockActivity.this, NumberBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton oneButton = (ImageButton) findViewById(R.id.oneButton);
+        oneButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(AssignValueBlockActivity.this, NumberBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton additionButton = (ImageButton) findViewById(R.id.additionButton);
+        additionButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(AssignValueBlockActivity.this, MathBlockActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

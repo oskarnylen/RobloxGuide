@@ -53,5 +53,104 @@ public class IndentBlockActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        ImageButton loopButton = (ImageButton) findViewById(R.id.loopButton1);
+        loopButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(IndentBlockActivity.this, LoopBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton loopButton2 = (ImageButton) findViewById(R.id.loopButton2);
+        loopButton2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(IndentBlockActivity.this, LoopBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton fourButton = (ImageButton) findViewById(R.id.fourButton);
+        fourButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(IndentBlockActivity.this, NumberBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton twoButton = (ImageButton) findViewById(R.id.twoButton);
+        twoButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(IndentBlockActivity.this, NumberBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton forwardButton = (ImageButton) findViewById(R.id.forwardButton);
+        forwardButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(IndentBlockActivity.this, ForwardBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton rotateRightButton = (ImageButton) findViewById(R.id.rotateRightButton);
+        rotateRightButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(IndentBlockActivity.this, ForwardBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton mainButton = (ImageButton) findViewById(R.id.mainButton);
+        mainButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(IndentBlockActivity.this, MainBlockActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

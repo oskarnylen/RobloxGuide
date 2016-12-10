@@ -72,25 +72,16 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/main_icon"
+            app:srcCompat="@drawable/main_icon_transparent"
             android:background="@android:color/background_light" />
 
         <ImageButton
-            android:id="@+id/forwardButton"
+            android:id="@+id/callSubButton1"
             android:layout_width="@dimen/smallImageButtonSize"
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/anropafunktion_icon"
-            android:background="@android:color/background_light" />
-
-        <ImageButton
-            android:layout_width="@dimen/smallImageButtonSize"
-            android:layout_height="@dimen/smallImageButtonSize"
-            android:scaleType="fitCenter"
-            android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/rotateright_icon"
-            android:id="@+id/rotateLeftButton"
+            app:srcCompat="@drawable/anropafunktion_icon_transparent"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -98,8 +89,17 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/anropafunktion_icon"
-            android:id="@+id/backwardButton"
+            app:srcCompat="@drawable/rotateright_icon_transparent"
+            android:id="@+id/rotateRightButton"
+            android:background="@android:color/background_light" />
+
+        <ImageButton
+            android:layout_width="@dimen/smallImageButtonSize"
+            android:layout_height="@dimen/smallImageButtonSize"
+            android:scaleType="fitCenter"
+            android:layout_margin="@dimen/smallImageButtonMargin"
+            app:srcCompat="@drawable/anropafunktion_icon_transparent"
+            android:id="@+id/callSubButton2"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -117,8 +117,9 @@
             android:scaleType="fitCenter"
             android:layout_marginTop="40dp"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/forward_icon"
-            android:background="@android:color/background_light" />
+            app:srcCompat="@drawable/forward_icon_transparent"
+            android:background="@android:color/background_light"
+            android:id="@+id/forwardButton" />
 
         <ImageButton
             android:layout_width="@dimen/smallImageButtonSize"
@@ -126,8 +127,9 @@
             android:scaleType="fitCenter"
             android:layout_marginTop="40dp"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/forward_icon"
-            android:background="@android:color/background_light" />
+            app:srcCompat="@drawable/forward_icon_transparent"
+            android:background="@android:color/background_light"
+            android:id="@+id/forwardButton2" />
 
     </GridLayout>
 
@@ -153,7 +155,7 @@
     <pl.droidsonroids.gif.GifTextView
         android:layout_width="350px"
         android:layout_height="350px"
-        android:background="@drawable/test_large"
+        android:background="@drawable/function_gif"
         android:layout_below="@+id/GridLayout1"
         android:layout_centerHorizontal="true" />
 

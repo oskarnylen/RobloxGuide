@@ -72,7 +72,7 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/main_icon"
+            app:srcCompat="@drawable/main_icon_transparent"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -89,7 +89,7 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/rotateright_icon"
+            app:srcCompat="@drawable/rotateright_icon_transparent"
             android:id="@+id/rotateRightButton"
             android:background="@android:color/background_light" />
 
@@ -108,7 +108,7 @@
             android:scaleType="fitCenter"
             android:layout_marginTop="40dp"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/funktion_icon"
+            app:srcCompat="@drawable/funktion_icon_transparent"
             android:background="@android:color/background_light"
             android:id="@+id/functionButton" />
 
@@ -118,7 +118,7 @@
             android:scaleType="fitCenter"
             android:layout_marginTop="40dp"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/forward_icon"
+            app:srcCompat="@drawable/forward_icon_transparent"
             android:background="@android:color/background_light"
             android:id="@+id/forwardButton1" />
 
@@ -128,7 +128,7 @@
             android:scaleType="fitCenter"
             android:layout_marginTop="40dp"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/forward_icon"
+            app:srcCompat="@drawable/forward_icon_transparent"
             android:background="@android:color/background_light"
             android:id="@+id/forwardButton2" />
 
@@ -156,7 +156,7 @@
     <pl.droidsonroids.gif.GifTextView
         android:layout_width="350px"
         android:layout_height="350px"
-        android:background="@drawable/test_large"
+        android:background="@drawable/function_gif"
         android:layout_below="@+id/GridLayout1"
         android:layout_centerHorizontal="true" />
 
