@@ -53,5 +53,76 @@ public class CallFunctionBlockActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton forwardButton = (ImageButton) findViewById(R.id.forwardButton1);
+        forwardButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(CallFunctionBlockActivity.this, ForwardBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton rotateRightButton = (ImageButton) findViewById(R.id.rotateRightButton);
+        rotateRightButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(CallFunctionBlockActivity.this, ForwardBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton forwardButton2 = (ImageButton) findViewById(R.id.forwardButton2);
+        forwardButton2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(CallFunctionBlockActivity.this, ForwardBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        ImageButton mainButton = (ImageButton) findViewById(R.id.mainButton);
+        mainButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(CallFunctionBlockActivity.this, MainBlockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton defineFunctionButton = (ImageButton) findViewById(R.id.functionButton);
+        defineFunctionButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(CallFunctionBlockActivity.this, DefineFunctionBlockActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

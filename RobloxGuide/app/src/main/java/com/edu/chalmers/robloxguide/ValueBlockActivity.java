@@ -55,5 +55,19 @@ public class ValueBlockActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton assignValueButton = (ImageButton) findViewById(R.id.anvandVardeButton);
+        assignValueButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(ValueBlockActivity.this, AssignValueBlockActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

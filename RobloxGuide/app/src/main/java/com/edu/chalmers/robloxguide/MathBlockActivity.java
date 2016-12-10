@@ -19,12 +19,14 @@ public class MathBlockActivity extends AppCompatActivity {
         TextView title = (TextView) findViewById(R.id.mainTitle);
         TextView description = (TextView) findViewById(R.id.mainDescriptionText);
         TextView exampleText = (TextView) findViewById(R.id.exempelText);
+        TextView moreText = (TextView) findViewById(R.id.moreText);
 
         Typeface font = Typeface.createFromAsset(getAssets(), "BradBunR.ttf");
 
         title.setTypeface(font);
         description.setTypeface(font);
         exampleText.setTypeface(font);
+        moreText.setTypeface(font);
 
         ImageButton backButton = (ImageButton) findViewById(R.id.tillbakaButton);
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +52,20 @@ public class MathBlockActivity extends AppCompatActivity {
                 // Hint: use Context's finish() method
                 Intent intent = new Intent(MathBlockActivity.this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |  Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton useValueButton = (ImageButton) findViewById(R.id.valueButton);
+        useValueButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(MathBlockActivity.this, AssignValueBlockActivity.class);
                 startActivity(intent);
             }
         });

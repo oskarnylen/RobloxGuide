@@ -109,5 +109,23 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(i);
             }
         });
+
+        ImageButton indentButton = (ImageButton) findViewById(R.id.mellanrumButton);
+
+        indentButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, IndentBlockActivity.class);
+                MainActivity.this.startActivity(i);
+            }
+        });
+
+        ImageButton mathButton = (ImageButton) findViewById(R.id.mathButton);
+
+        mathButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, MathBlockActivity.class);
+                MainActivity.this.startActivity(i);
+            }
+        });
     }
 }

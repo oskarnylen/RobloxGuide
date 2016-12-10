@@ -13,19 +13,19 @@
     tools:context="com.edu.chalmers.robloxguide.MainBlockActivity">
 
     <TextView
-        android:text="Matte-block"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="@dimen/headerTextSize"
+        android:textSize="92sp"
         android:textAlignment="center"
         android:id="@+id/mainTitle"
-        android:textColor="#000"/>
+        android:textColor="#000"
+        android:text="Matteblock" />
 
     <TextView
-        android:text="Matte-blocken används till att räkna fram nya värden."
+        android:text="Matteblocken används till att räkan fram andra värden"
         android:id="@+id/mainDescriptionText"
         android:textColor="#000"
         android:textSize="@dimen/descriptionTextSize"
@@ -81,7 +81,7 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/two_icon"
+            app:srcCompat="@drawable/one_icon"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -98,25 +98,11 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/one_icon"
+            app:srcCompat="@drawable/four_icon"
             android:id="@+id/backwardButton"
             android:background="@android:color/background_light" />
 
     </GridLayout>
-
-    <TextView
-        android:text="Läs mer om hur du sparar värden genom att trycka här:"
-        android:textColor="#000"
-        android:id="@+id/moreText"
-        android:textSize="@dimen/exampleTextSize"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/GridLayout1"
-        android:layout_alignLeft="@+id/mainDescriptionText"
-        android:layout_alignStart="@+id/mainDescriptionText" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -137,14 +123,11 @@
         android:id="@+id/hemButton"
         android:background="@null" />
 
-    <ImageButton
-        android:layout_width="@dimen/smallImageButtonSize"
-        android:layout_height="@dimen/smallImageButtonSize"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/tilldelavarde_icon"
-        android:id="@+id/valueButton"
-        android:background="@android:color/background_light"
-        android:layout_below="@+id/moreText"
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:background="@drawable/test_large"
+        android:layout_below="@+id/GridLayout1"
         android:layout_centerHorizontal="true" />
 
     <!-- <ImageView

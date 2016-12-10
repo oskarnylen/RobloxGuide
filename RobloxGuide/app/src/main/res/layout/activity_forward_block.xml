@@ -89,8 +89,8 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/rotateleft_icon"
-            android:id="@+id/rotateLeftButton"
+            app:srcCompat="@drawable/rotateright_icon"
+            android:id="@+id/rotateRightButton"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -98,8 +98,8 @@
             android:layout_height="@dimen/smallImageButtonSize"
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
-            app:srcCompat="@drawable/backward_icon"
-            android:id="@+id/backwardButton"
+            app:srcCompat="@drawable/forward_icon"
+            android:id="@+id/forwardButton2"
             android:background="@android:color/background_light" />
 
     </GridLayout>

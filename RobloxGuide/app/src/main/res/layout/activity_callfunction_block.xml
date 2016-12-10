@@ -90,7 +90,7 @@
             android:scaleType="fitCenter"
             android:layout_margin="@dimen/smallImageButtonMargin"
             app:srcCompat="@drawable/rotateright_icon"
-            android:id="@+id/rotateLeftButton"
+            android:id="@+id/rotateRightButton"
             android:background="@android:color/background_light" />
 
         <ImageButton
@@ -109,7 +109,8 @@
             android:layout_marginTop="40dp"
             android:layout_margin="@dimen/smallImageButtonMargin"
             app:srcCompat="@drawable/funktion_icon"
-            android:background="@android:color/background_light" />
+            android:background="@android:color/background_light"
+            android:id="@+id/functionButton" />
 
         <ImageButton
             android:layout_width="@dimen/smallImageButtonSize"
@@ -118,7 +119,8 @@
             android:layout_marginTop="40dp"
             android:layout_margin="@dimen/smallImageButtonMargin"
             app:srcCompat="@drawable/forward_icon"
-            android:background="@android:color/background_light" />
+            android:background="@android:color/background_light"
+            android:id="@+id/forwardButton1" />
 
         <ImageButton
             android:layout_width="@dimen/smallImageButtonSize"
@@ -127,7 +129,8 @@
             android:layout_marginTop="40dp"
             android:layout_margin="@dimen/smallImageButtonMargin"
             app:srcCompat="@drawable/forward_icon"
-            android:background="@android:color/background_light" />
+            android:background="@android:color/background_light"
+            android:id="@+id/forwardButton2" />
 
     </GridLayout>
 

@@ -53,5 +53,19 @@ public class ForwardBlockActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton mainButton = (ImageButton) findViewById(R.id.mainButton);
+        mainButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // TODO:
+                // This function closes Activity Two
+                // Hint: use Context's finish() method
+                Intent intent = new Intent(ForwardBlockActivity.this, MainBlockActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
